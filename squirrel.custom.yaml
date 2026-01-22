@@ -1,0 +1,122 @@
+# squirrel.custom.yaml
+patch:
+  #us_keyboard_layout: true                         # 键盘选项：应用美式键盘布局
+  show_notifications_when: growl_is_running        # 状态通知，默认装有Growl时显示，全开(always)/全关(never)
+  show_notifications_via_notification_center: true
+  app_options: 
+    com.jetbrains.pycharm:
+      ascii_mode: true
+    com.raycast.macos:
+      ascii_mode: true
+    com.microsoft.VSCode:
+      ascii_mode: true
+    com.google.antigravity:
+      ascii_mode: true
+    io.xpipe.app:
+      ascii_mode: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+    cn.com.langeasy.LangEasyLexis:
+      ascii_mode: true
+    com.apple.dt.Xcode:
+      ascii_mode: true
+    com.mitchellh.ghostty:
+      ascii_mode: true
+    
+   # 清除应用默认输入法，防止无法输入中文
+  style:
+    color_scheme: blue                 # macos明亮主题
+    color_scheme_dark: catppuccin_macchiato        # macos黑暗主题
+    translucency: true # 背景半透明总开关，不需要关掉即可
+    inline_preedit: true
+    alpha: 0.9 # 透明度「方案」
+    horizontal: true # 水平排列
+    text_orientation: horizontal  
+    candidate_format: "%c %@" # 编号 %c 和候选词 %@ 前后的空间
+    candidate_list_layout: linear
+    corner_radius: 8 # 候选条圆角
+    border_height: 1
+    border_width: 1
+    font_face: "PingFangSC" # 候选词字体
+    font_point: 16 # 候选字词大小
+    label_font_face: "PingFangSC" # 候选词编号字体
+    label_font_point: 12 # 候选编号大小
+    color_space: display_p3
+  preset_color_schemes:
+    blue:
+      name: "蓝色/blue"
+      author: "web"
+      back_color: 0xFFFFFF # 候选条背景色，24位色值，16进制，ABGR顺序
+      border_color: 0xFCF4EB # 边框颜色
+      candidate_text_color: 0x2E2E2E # 预选项文字颜色
+      comment_text_color: 0xE0E0E0 # 拼音等提示文字颜色
+      hilited_candidate_label_color: 0xFFDEA6 # 候选编号颜色
+      hilited_candidate_text_color: 0xF4953C # 候选文字颜色
+      hilited_candidate_back_color: 0xFCF4EB # 候选文字背景色
+      label_color: 0xE0E0E0 # 预选栏编号颜色
+      text_color: 0x2E2E2E # 高亮选中词颜色
+
+    catppuccin_latte:
+      name: Catppuccin Latte
+
+      back_color: 0xE8E0DC                         # 候选条背景色 Crust
+      border_color: 0xEFE9E6                       # 边框色 Mantle
+      text_color: 0x775F5C                         # 拼音行文字颜色 Subtext1
+      label_color: 0x856F6C                        # 预选栏编号颜色 Subtext0
+      candidate_text_color: 0x694F4C               # 预选项文字颜色 Text
+      hilited_back_color: 0xef3988                 # 第一候选项背景背景色 Mauve
+      hilited_candidate_text_color: 0xF5F1EF       # 第一候选项文字颜色 Base
+      hilited_candidate_label_color: 0xDAD0CC      # 第一候选项编号颜色 Surface0
+      hilited_text_color: 0xBEB0AC                 # 高亮拼音 (需要开启内嵌编码) Surface2
+      hilited_comment_text_color: 0xDAD0CC         # 注解文字高亮 Surface0
+      comment_text_color: 0xBEB0AC                 # 拼音等提示文字颜色 Surface2
+
+    catppuccin_mocha:
+      name: Catppuccin Mocha
+
+      back_color: 0x1B1111                         # 候选条背景色 Crust
+      border_color: 0x251818                       # 边框色 Mantle
+      text_color: 0xDEC2BA                         # 拼音行文字颜色 Subtext1
+      label_color: 0xC8ADA6                        # 预选栏编号颜色 Subtext0
+      candidate_text_color: 0xF4D6CD               # 预选项文字颜色 Text
+      hilited_back_color: 0xF7A6CB                 # 第一候选项背景背景色 Mauve
+      hilited_candidate_text_color: 0x2E1E1E       # 第一候选项文字颜色 Base
+      hilited_candidate_label_color: 0x443231      # 第一候选项编号颜色 Surface0
+      hilited_text_color: 0x705B58                 # 高亮拼音 (需要开启内嵌编码) Surface2
+      hilited_comment_text_color: 0x443231         # 注解文字高亮 Surface0
+      comment_text_color: 0x705B58                 # 拼音等提示文字颜色 Surface2
+
+
+    catppuccin_frappe:
+      name: Catppuccin Frappe
+
+      back_color: 0x342623                         # 候选条背景色 Crust
+      border_color: 0x3C2C29                       # 边框色 Mantle
+      text_color: 0xE2BFB5                         # 拼音行文字颜色 Subtext1
+      label_color: 0xCEADA5                        # 预选栏编号颜色 Subtext0
+      candidate_text_color: 0xF5D0C6               # 预选项文字颜色 Text
+      hilited_back_color: 0xE69ECA                 # 第一候选项背景背景色 Mauve
+      hilited_candidate_text_color: 0x463430       # 第一候选项文字颜色 Base
+      hilited_candidate_label_color: 0x594541      # 第一候选项编号颜色 Surface0
+      hilited_text_color: 0x806862                 # 高亮拼音 (需要开启内嵌编码) Surface2
+      hilited_comment_text_color: 0x594541         # 注解文字高亮 Surface0
+      comment_text_color: 0x806862                 # 拼音等提示文字颜色 Surface2
+
+    catppuccin_macchiato:
+      name: Catppuccin Macchiato
+
+      back_color: 0x261918                         # 候选条背景色 Crust
+      border_color: 0x30201E                       # 边框色 Mantle
+      text_color: 0xE0C0B8                         # 拼音行文字颜色 Subtext1
+      label_color: 0xCBADA5                        # 预选栏编号颜色 Subtext0
+      candidate_text_color: 0xF5D3CA               # 预选项文字颜色 Text
+      hilited_back_color: 0xF6A0C6                 # 第一候选项背景背景色 Mauve
+      hilited_candidate_text_color: 0x3A2724       # 第一候选项文字颜色 Base
+      hilited_candidate_label_color: 0x4F3A36      # 第一候选项编号颜色 Surface0
+      hilited_text_color: 0x70B558                 # 高亮拼音 (需要开启内嵌编码) Surface2
+      hilited_comment_text_color: 0x4F3A36         # 注解文字高亮 Surface2
+      comment_text_color: 0x70B558                 # 拼音等提示文字颜色 Surface0
+
+key_binder:
+  bindings:
+    - {accept: "Control+space", select: .next, when: always}
