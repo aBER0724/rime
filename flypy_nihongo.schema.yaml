@@ -208,6 +208,7 @@ japanese:
   dictionary: japanese
   enable_completion: true
   enable_sentence: true
+  initial_quality: 1.1
 
 melt_eng:
   dictionary: melt_eng           # 英文词典
