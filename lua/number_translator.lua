@@ -144,9 +144,9 @@ local function number_translatorFunc(num)
 end
 
 local function number_translator(input, seg, env)
-    -- 获取 recognizer/patterns/number 的第 2 个字符作为触发前缀
+    -- 获取 recognizer/patterns/rmb 的第 2 个字符作为触发前缀
     env.number_keyword = env.number_keyword or
-        env.engine.schema.config:get_string('recognizer/patterns/number'):sub(2, 2)
+        env.engine.schema.config:get_string('recognizer/patterns/rmb'):sub(2, 2)
     local str, num, numberPart
     if env.number_keyword ~= '' and input:sub(1, 1) == env.number_keyword then
         str = string.gsub(input, "^(%a+)", "")
